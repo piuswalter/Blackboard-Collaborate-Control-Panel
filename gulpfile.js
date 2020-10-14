@@ -39,6 +39,6 @@ gulp.task('script', function () {
         // Minify the file
         .pipe(uglify())
         // Output
-        .pipe(gulp.dest('./dist/'))
+        .pipe(gulp.dest('./dist'))
 });
 
