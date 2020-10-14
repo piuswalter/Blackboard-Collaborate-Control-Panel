@@ -1,7 +1,12 @@
 name: Build CD
 
-on: [push]
-
+on:
+  push:
+    paths-ignore:
+      - 'dist/bccp.html'
+      - 'dist/bccp.js'
+    branches:
+      - master
 jobs:
   build:
     runs-on: ubuntu-latest
