@@ -2,13 +2,11 @@ name: Build CD
 
 on:
   push:
-    paths-ignore:
-      - 'dist/bccp.html'
-      - 'dist/bccp.js'
     branches:
       - master
 jobs:
   build:
+    if: "!contains(github.event.head_commit.message, '🤖')"
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -24,7 +22,7 @@ jobs:
         with:
             # The arguments for the `git add` command (see the paragraph below for more info)
             # Default: '.'
-            add: "dist"
+            add: "dist/"
 
             # The name of the user that will be displayed as the author of the commit
             # Default: author of the commit that triggered the run
