@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "The Blackboard Collaborate Control Panel (BCCP) provides a variety of directly accessible functions and extensions for the Distance Learning System Blackboard Collaborate.",
   "homepage": "https://piuswalter.github.io/Blackboard-Collaborate-Control-Panel/",
-  "main": "injection.js",
+  "main": "dist/bccp.js",
   "license": "ISC",
   "author": "",
   "keywords": [],

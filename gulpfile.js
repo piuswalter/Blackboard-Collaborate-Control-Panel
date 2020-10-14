@@ -1,18 +1,18 @@
 'use strict';
 
-var del        = require('del');
-var gulp       = require('gulp');
-var htmlmin    = require('gulp-htmlmin');
-var replace    = require('gulp-replace-task')
-var uglify     = require('gulp-uglify');
-var sourcemaps = require('gulp-sourcemaps');
-var fs         = require('fs');
+const del        = require('del');
+const gulp       = require('gulp');
+const htmlmin    = require('gulp-htmlmin');
+const replace    = require('gulp-replace-task')
+const uglify     = require('gulp-uglify');
+const sourcemaps = require('gulp-sourcemaps');
+const fs         = require('fs');
 
 // Clean output directory
 gulp.task('clean', () => del(['dist']));
 
 // Gulp task to minify HTML files
-const htmlFile = gulp.task('html', function () {
+gulp.task('html', function () {
     return gulp.src(['./source/bccp.html'])
         .pipe(htmlmin({
             collapseWhitespace: true,
