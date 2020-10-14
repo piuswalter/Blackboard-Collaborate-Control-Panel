@@ -11,6 +11,18 @@
 			background-color: #555555;
 			color: white;
 		}
+		
+		.pw-button-warning {
+			background-color: white;
+			color: black;
+			border: 2px solid #e84848;
+			transition-duration: 0.4s;
+		}
+		
+		.pw-button-warning:hover {
+			background-color: #e84848;
+			color: white;
+		}
 	</style>
 	
 	<div style="width:100%;">
@@ -140,9 +152,11 @@
 			</td>
 			<td>
 				<p style="margin-bottom:5px;">More</p>
-				<button class="pw-button" title="Start escalation" onclick="startEmojiEscalation();">E</button>
+				<button class="pw-button" title="Start escalation with emoji switching" onclick="startEmojiEscalation();">E</button>
 				<span> </span>
-				<button class="pw-button" title="Start escalation" onclick="startHandEscalation();">H</button>
+				<button class="pw-button" title="Start escalation with all emojis switching" onclick="startAllEmojiEscalation();">P</button>
+				<span> </span>
+				<button class="pw-button-warning" title="Start escalation with raising hand" onclick="startHandEscalation();">H</button>
 			</td>
 		</tr>
 		<tr style="background-color:#fff;">
