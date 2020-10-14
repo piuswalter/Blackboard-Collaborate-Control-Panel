@@ -1,0 +1,28 @@
+{
+  "name": "Blackboard-Collaborate-Control-Panel",
+  "version": "1.0.0",
+  "description": "The Blackboard Collaborate Control Panel (BCCP) provides a variety of directly accessible functions and extensions for the Distance Learning System Blackboard Collaborate.",
+  "homepage": "https://piuswalter.github.io/Blackboard-Collaborate-Control-Panel/",
+  "main": "injection.js",
+  "license": "ISC",
+  "author": "",
+  "keywords": [],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/piuswalter/Blackboard-Collaborate-Control-Panel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/piuswalter/Blackboard-Collaborate-Control-Panel/issues"
+  },
+  "devDependencies": {
+    "del": "^2.0.2",
+    "gulp": "4.0.2",
+    "gulp-htmlmin": "^5.0.1",
+    "gulp-replace-task": "^0.11.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^2.0.0"
+  }
+}
