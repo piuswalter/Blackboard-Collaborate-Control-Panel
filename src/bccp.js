@@ -101,3 +101,29 @@ function startHandEscalation() {
 		$('#raise-hand').click();
 	}, 200);
 }
+
+function activateDarkMode() {
+	$('#pw-control-panel').css('color', 'white');
+	$('#pw-control-panel').css('background-color', '#0f0f0f');
+	$('#pw-control-panel table tbody').css('border', '1px solid #262626');
+	$('#pw-control-panel table tr').css('color', 'white');
+	$('#pw-control-panel table tr').css('background-color', '#262626');
+	$('.pw-button').css('color', 'white');
+	$('.pw-button').css('background-color', '#555');
+	$('.pw-button').mouseover(function() {
+		$(this).css('color', '#555');
+		$(this).css('background-color', 'white');
+	}).mouseout(function() {
+		$(this).css('color', 'white');
+		$(this).css('background-color', '#555');
+	});
+	$('.pw-button-warning').css('color', 'white');
+	$('.pw-button-warning').css('background-color', '#e84848');
+	$('.pw-button-warning').mouseover(function() {
+		$(this).css('color', '#e84848');
+		$(this).css('background-color', 'white');
+	}).mouseout(function() {
+		$(this).css('color', 'white');
+		$(this).css('background-color', '#e84848');
+	});
+}

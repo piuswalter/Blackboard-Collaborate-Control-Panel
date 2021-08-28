@@ -1,4 +1,4 @@
-<div id="pw-control-panel" style="pointer-events:auto;padding:10px;width:360px;height:215px;position:absolute;right:10px;bottom:75px;background-color:#f8f8f8;z-index:9997;">
+<div id="pw-control-panel" style="cursor:default;pointer-events:auto;padding:10px;width:360px;height:215px;position:absolute;right:10px;bottom:75px;background-color:#f8f8f8;z-index:9997;">
 	<style>
 		.pw-button {
 			background-color: white;
@@ -30,7 +30,7 @@
 			<button class="mover" style="font-size:20px;line-height:30px;cursor:move;" title="Move Blackboard Collaborate Control Panel">&boxbox;</button>
 		</div>
 		<div style="float:left;width:80%;text-align:center;">
-			<span style="font-size:15px;line-height:30px;">Blackboard Collaborate Control Panel</span>
+			<span style="font-size:15px;line-height:30px;cursor:pointer;" title="Activate Dark Mode" onclick="activateDarkMode();">Blackboard Collaborate Control Panel</span>
 		</div>
 		<div style="float:right;width:10%;text-align:right;">
 			<button style="font-size:30px;cursor:pointer;" title="Close Blackboard Collaborate Control Panel" onclick="$(\'#pw-wrapper\').remove();$(\'#pw-control-panel\').remove();">&times;</button>
