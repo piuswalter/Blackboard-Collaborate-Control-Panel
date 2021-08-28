@@ -41,4 +41,3 @@ gulp.task('script', function () {
         // Output
         .pipe(gulp.dest('./dist'))
 });
-
