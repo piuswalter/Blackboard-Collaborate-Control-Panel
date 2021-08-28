@@ -13,7 +13,7 @@ gulp.task('clean', () => del(['dist']));
 
 // Gulp task to minify HTML files
 gulp.task('html', function () {
-    return gulp.src(['./source/bccp.html'])
+    return gulp.src(['./src/bccp.html'])
         .pipe(htmlmin({
             collapseWhitespace: true,
             removeComments: true,
@@ -26,7 +26,7 @@ gulp.task('html', function () {
 gulp.task('script', function () {
     const content = fs.readFileSync('./dist/bccp.html', 'utf8').toString();
 
-    return gulp.src('./source/bccp.js')
+    return gulp.src('./src/bccp.js')
         .pipe(sourcemaps.init())
         .pipe(replace({
             patterns: [{
