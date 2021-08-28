@@ -23,7 +23,7 @@ jobs:
 
             # The name of the user that will be displayed as the author of the commit
             # Default: author of the commit that triggered the run
-            author_name: Github Action CD
+            author_name: GitHub Action CD
 
             # The email of the user that will be displayed as the author of the commit
             # Default: author of the commit that triggered the run
